@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="SurveyFormProject.css" />
+  </head>
+  <body>
+    <h1 id="title">Free Mentorship</h1>
+    <p class="mine" id="description">You are welcome! We are happy to have you here.</p>
+
+    
+    <form id="survey-form">
+      <label id="name-label">NAME<input id="name" required type="text" placeholder="Enter your name"></label>
+      <label id="email-label">EMAIL<input id="email" required type="email" placeholder="Enter your email"></label>
+      <label id="number-label">AGE (optional)<input id="number" required type="number" name="age" min="13" max="120" placeholder="Enter your age"></label>
+       
+
+   
+    <label for="dropdown"> How did you hear about us?
+    <select id="dropdown" name="dropdown">
+       <option value="">(select one)<option>
+       <option value="1">In school<option>
+       <option value="2">Social media<option>
+       <option value="3">From a friend<option>
+    </select>
+    </label>
+    <hr class="line">
+
+    <label for="learn"> Choose your stack
+    <select id="learn" name="learn">
+       <option value="">Choose your stack</option>
+       <option value="1">Frontend</option>
+       <option value="2">Backend</option>
+       <option value="3">Mobile Development</option>
+       <option value="4">UI/UX</option>
+    </select>
+    </label>
+ 
+   
+
+  
+      <p class="me">How would you like to learn</p>
+      <label for="Onl-line"><input id="On-line" name="On-line" type="radio" class="inline" value="radio"></input>On-line</label>
+      <label for="Onl-line"><input id="On-line" name="On-line" type="radio" class="inline" value="radio"></input>On-Site</label>
+      <hr class="line">
+   
+
+    
+      <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline" value="checkbox"/> Personal Account</label>
+      <label for="business-account"><input id="business-account" type="checkbox" class="inline" name="business-account" value="checkbox">Business Account</label>
+      <label><input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" class="inline" value="checkbox">I accept the <a href="">terms and conditions</a></label>
+   
+     <textarea id="bio" name="bio" placeholder=" like coding..."></textarea>
+     <input type="submit" id="submit" value="Submit">
+
+    </form>
+    </body>
+    </html>

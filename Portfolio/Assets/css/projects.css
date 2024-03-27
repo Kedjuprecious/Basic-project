@@ -1,0 +1,34 @@
+.heading{
+    font-family: 'FontAwesome';
+    margin-left: 70px;
+}
+
+.recent-projects{
+    width: 100%;
+    background: #97a6b4;
+    animation: myabout 8s infinite;
+}
+
+/* @keyframes myabout {
+    50% {background-color: rgb(221, 194, 228);}
+} */
+
+/* Footer */
+.footer{
+    /* background-color: #97a6b4; */
+    background-color: rgb(221, 194, 228);
+}
+
+.f-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.f-icon{
+    font-size: 25px;
+}
+
+/* Navbar */
+.navbar{
+    background-color: rgb(221, 194, 228);
+}

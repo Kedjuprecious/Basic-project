@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Climate Change</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        color: #1a64d6;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+      }
+
+      h2 {
+        margin: 0;
+
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      li:hover {
+        background: #fffbef;
+      }
+
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: blueviolet;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: blueviolet;
+        border: 1px solid #1a64d6;
+      }
+
+      body {
+        background: rgba(138, 43, 226, 0.1);
+      }
+
+      .name {
+        color: rgb(110, 36, 180);
+      }
+    </style>
+    <body>
+    <h1>
+      🌤
+      <br>
+      Currently 23° in Cameroon
+    </h1>
+    <h2>29° / <strong>25°</strong></h2>
+    <ul>
+      <li>
+        <h3>🌧Tomorrow</h3>
+        <p>21° / <strong>24°</strong></p>
+      </li>
+      <li>
+        <h3>🌥 Saturday</h3>
+        <p>23° / <strong>25°</strong></p>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <p>25° / <strong>28°</strong></p>
+      </li>
+    </ul>
+
+    <button>Change city</button>
+    <p>Coded by <i class="name">Kedju Precious🥰🥰</i></p>
+    <script>
+      function changeCity() {
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        let heading = document.querySelector("h1");
+        if (temperature < 0) {
+          heading.innerHTML =
+            "😥<br />Currently " + temperature + "°C in " + city;
+        } else {
+          heading.innerHTML =
+            "😍<br />Currently " + temperature + "°C in " + city;
+        }
+      }
+
+      let changeButton = document.querySelector("button");
+      changeButton.addEventListener("click", changeCity);
+    </script>  
+
+        </body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%); */
+    background-color: #97a6b4;
+}
+
+
+/* Footer */
+.footer{
+    /* background-color: #97a6b4; */
+    background-color: rgb(221, 194, 228);
+}
+
+.f-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.f-icon{
+    font-size: 25px;
+}
+
+
+/* Navbar */
+.navbar{
+    background-color: rgb(221, 194, 228);
+}
+
+/* Responsive */
+@media screen and (max-width: ){
+    
+}

@@ -1,0 +1,222 @@
+/* Navbar */
+.navbar{
+    background-color: #f5bdd0;
+}
+
+/* Slider */
+.carousel-item{
+    /* height: 32rem; */
+    background: rgb(8, 8, 8);
+    position: relative;
+}
+
+.slide-img{
+    object-fit: cover;
+    /* height: -webkit-fill-available; */
+    height: fit-content;
+}
+
+.container1{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+/* .bg1{
+    background-image: url('/Assets/Images/img5.webp');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.bg2{
+    background-image: url('/Assets/Images/Img7.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.bg3{
+    background-image: url('/Assets/Images/Img8.webp');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+} */
+
+/* About */
+.bg4{
+    background-image: url('/Assets/Images/-x71969.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: mybg4 10s infinite;
+}
+
+/* @keyframes mybg4 {
+    50% {
+      -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+    }
+} */
+
+.p-text{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.heading{
+    font-family: 'FontAwesome';
+    /* margin-left: 70px; */
+}
+
+/* Recent projects */
+.btn-projects{
+    transition: all 0.5s;
+    cursor: pointer;
+    /* float: right; */
+}
+
+.btn-projects span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-projects span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0s;
+}
+
+.btn-projects:hover span {
+    padding-right: 25px;
+}
+  
+.btn-projects:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.recent-projects{
+    width: 100%;
+    background: #e57593;
+    animation: myabout 8s infinite;
+}
+
+/* @keyframes myabout {
+    50% {background-color: rgb(221, 194, 228);}
+} */
+
+/* CTA */
+.CTA{
+    background: black;
+}
+
+.CTA-text{
+    margin-left: 100px;
+    color: rgb(224, 238, 238);
+}
+
+
+/* CTA button */
+
+.CTA-btn-container{
+    text-align: center;
+    /* background-color: white; */
+}
+
+.arrow-container {
+    position: relative;
+    width: 100%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .arrow {
+    position: relative;
+    font-size: 60px;
+    /* width: 4px; */
+    /* height: 100px; */
+    /* background-color: #ff5c5c; */
+    animation: arrowAnimation 2s infinite;
+    color: white;
+  }
+  
+  @keyframes arrowAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+      box-shadow: 0 0 10px green;
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .CTA{
+    /* background-color: rgb(148, 6, 6); */
+    
+}
+
+/* .CTA-wrapper{
+    background: rgb(8, 8, 8);
+    position: relative;
+} */
+
+.CTA-wrapper{
+    /* background-color: #f5bdd0; */
+    background-image: url('/Assets/Images/Img7.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: mybg4 10s infinite;
+}
+
+#overlay {
+    background-color: rgb(6, 6, 6);
+    z-index: 2;
+}
+
+.T-image{
+    border-radius: 50%;
+}
+
+/* Testimonials */
+.T-text{
+    width: 400px;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #97a6b4;
+}
+
+.f-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.f-icon{
+    font-size: 25px;
+}

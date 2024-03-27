@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contacts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/Assets/fonts/css/all.css">
+    <link rel="stylesheet" href="/Assets/Bootstrap/css/bootstrap.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='/Assets/css/contact.css'>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar p-0" id="navbar">
+
+        <div class="container-fluid m-0 px-5 py-2">
+  
+          <img src="/Assets/Images/PK logo2.png" alt="PK logo" width="50px" height="" class="m-0 p-0 nav-img">           
+  
+          <div class=" navbar navbar-expand p-0">
+  
+            <ul class="navbar-nav text-center">
+  
+              <li class="nav-item px-5">
+                <i class="fa-solid fa-house"></i>
+                <a class="nav-link active text-dark p-0" aria-current="page" href="/Portfolio.html"><span class="">Home</span></a>
+              </li>
+            
+              <li class="nav-item px-5">
+                <i class="fa-solid fa-users"></i>
+                <a class="nav-link active text-dark p-0" aria-current="page" href="/Pages/projects.html"><span class="">Projects</span></a>
+              </li>
+            
+              <li class="nav-item px-5 pe-0">
+                <i class="fa-solid fa-briefcase"></i>
+                <a class="nav-link active text-dark p-0" aria-current="page" href="/Pages/contact.html"><span class="">Contact</span></a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+  
+      </nav>
+
+    <!-- Form -->
+    <form id="todoForm" >
+
+        <div class="container todo-group text-center w-50 bg-white shadow-lg rounded my-5 p-4">
+
+            <h3 class="fw-bold heading text-center py-2">Contact Me</h3>
+
+            <!-- Task name -->
+
+            <div class="form-floating my-3 shadow" id="div1">
+                <input type="text" class="form-control bg-light" id="cName" placeholder="Task Title">
+                <label for="todo-title">Name</label>
+                <!-- <div id="titleInfo"></div> -->
+            </div>
+
+            <!-- Email -->
+
+            <div class="form-floating my-3 shadow" id="div1">
+                <input type="email" class="form-control bg-light" id="cEmail" placeholder="Task Title">
+                <label for="todo-title">Email</label>
+                <!-- <div id="titleInfo"></div> -->
+            </div>
+
+            <!-- Contact option -->
+
+            <div class="form-floating my-3 shadow">
+                <select class="form-select" id="cOption" aria-label="Floating label select example" multiple aria-placeholder="Works with select">
+                  <option value="" disabled selected hidden=""></option>
+                  <option class="form-check-input" type="checkbox" value="1">HTML</option>
+                  <option class="form-check-input" type="checkbox" value="2">CSS</option>
+                  <option class="form-check-input" type="checkbox" value="3">JAVASACRIPT</option>
+                  <option class="form-check-input" type="checkbox" value="4">CONTENT WRITING</option>
+                </select>
+                <label for="floatingSelect">Works with selects</label>
+            </div>
+
+            <!-- Message -->
+
+            <div class="form-floating my-3 shadow">
+                <textarea class="form-control h-100 bg-light" placeholder="Task description" id="cMessage"></textarea>
+                <label for="todo-description">Task Message</label>
+                <!-- <div id="describeInfo"></div> -->
+            </div>
+
+            <hr class="m-0 shadow">
+            <hr class="m-0 shadow">
+            <input type="hidden" name="todo-id" id="todoId">
+           
+
+            <!-- <button type="submit" id="btn-submit" class="btn px-5 fw-bold rounded my-4 shadow" style="background-color: rgb(155, 208, 255);">Submit</button> -->
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Your contact has been received</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+    </form>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="col-lg-12 m-0 p-5 d-flex justify-content-between">
+    
+          <div class="card" style="width: 18rem; border: none; background-color: rgb(221, 194, 228);">
+            <img src="/Assets/Images/PK logo2.png" alt="PK logo" width="50px" height="" class="m-0 p-0 nav-img">
+            <div class="card-body p-0">
+              <p class="card-text fw-bold" style="font-family: cursive;">THINKING MADE VISUAL</p>
+            </div>
+          </div>
+    
+          <div>
+            <h5 class="fw-bold" style="font-family: inherit;">Side Nav</h5>
+            <ul style="list-style: none;" class="p-0 mt-3">
+              <li class="f-list fw-bold"><a href="#home">Home</a></li>
+              <li class="f-list fw-bold"><a href="#home">Projects</a></li>
+              <li class="f-list fw-bold"><a href="#home">Contact</a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <h5 class="fw-bold" style="font-family: inherit;">Social Media</h5>
+            <ul style="list-style: none;" class="p-0 mt-4">
+              <li class="f-list fw-bold d-inline"><a href="https://twitter.com/LekunzePre15147"><i class="fa-brands fa-x-twitter f-icon"></i></a></li>
+              <li class="f-list fw-bold d-inline"><a href="https://www.linkedin.com/in/precious-kedju-lekunze-31b93a259/"></a><i class="fa-brands fa-linkedin f-icon" style="color: rgb(31, 38, 248);"></i></a></li>
+              <li class="f-list fw-bold d-inline"><a href="https://api.whatsapp.com/send/?phone=237654099819&text&type=phone_number&app_absent=0"></a><i class="fa-brands fa-whatsapp f-icon" style="color: #0e7723;"></i></li>
+              <li class="f-list fw-bold d-inline"><a href="https://web.facebook.com/kedju.precious.9/?_rdc=4&_rdr"><i class="fa-brands fa-facebook f-icon" style="color: rgb(31, 38, 248);"></i></a></li>
+              <li class="f-list fw-bold d-inline"><a href="https://github.com/Kedjuprecious"><i class="fa-brands fa-github f-icon"></i></a></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+      </footer>
+        
+
+
+    <script src='/Assets/js/contact.js'></script>
+</body>
+</html>
